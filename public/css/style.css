@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+*, html, body {
+  font-family: 'Poppins', sans-serif;
+  z-index:0;
+}
+
+html.index {
+  height:93.5% !important;
+  font-weight:300;
+}
+
+html, body {
+  height:100%;
+  font-weight:300;
+}
+
+html {
+  padding:25px 15px;
+  background:#cacaca;
+}
+
+body {
+  box-shadow:0 -4px 8px rgba(0,0,0,0.30), 0 5px 8px rgba(0,0,0,0.45);
+  background:#eee;
+  flex-flow:column;
+  display:flex;
+}
+
+.header-container {
+    background: linear-gradient(0.25turn, #37d7ff, #009dff, #114fec);
+  padding:15px 50px;
+  flex-flow: column;
+  display:flex;
+  color:#fff;
+}
+
+.header-container.big {
+  height:30%;
+}
+
+form.invisible {
+  display:none !important;
+}
+
+.form-inline.invisible
+{
+  display:none !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding:15px;
+}
+
+nav ul {
+  display:flex;
+}
+
+nav ul li {
+  border-radius:20px;
+  padding: 5px 10px;
+  margin:0 5px;
+}
+
+nav ul li:last-child {
+  padding:0;
+  margin:0;
+  padding: 5px 10px;
+  margin-left:10px;
+}
+
+nav ul li:hover {
+  background:rgba(255,255,255, .2);
+  transition:background 0.2s ease-in-out;
+}
+
+nav a {
+  color:#fff;
+  text-decoration: none;
+}
+
+nav p {
+  text-transform: uppercase;
+  font-weight:600;
+  margin:auto 0;
+}
+
+header {
+  justify-content:center;
+  align-items:center;
+  flex-flow:column;
+  display:flex;
+  margin:auto;
+  height:100%;
+  width:100%;
+}
+
+header h4 {
+  margin:0 0 20px 0;
+  font-size:2.8em;
+  font-weight:600;
+}
+
+header p {
+  text-align: center;
+}
+
+.body-content {
+  padding:25px;
+}
+
+.body-content .form-inline form {
+  display:inline-flex;
+}
+
+.body-content .form-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-content .form-block form {
+  display:block;
+  margin:auto !important;
+
+}
+
+/** accueil **/
+
+#landing {
+  height:50%;
+}
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.body-content .login-page {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inline, .form-block {
+  margin:0 0 50px 0;
+}
+
+.body-content .login-page h4, .body-content .login-page h5 {
+  font-weight: 600;
+}
+
+.body-content .login-page h4 {
+  font-size:2em;
+  margin:0 0 40px 0;
+}
+
+.body-content .login-page input {
+  background: rgba(0,0,0, .025);
+  border: none;
+  margin: 10px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  transition:background 0.2s ease-in-out;
+  color:#7a7a7a;
+}
+
+.body-content .login-page input:hover {
+  background: rgba(0,0,0, .045);
+}
+
+.body-content .login-page input:focus {
+  background: rgba(0,0,0, .065);
+}
+
+.body-content .login-page .form-input {
+  display:flex;
+  align-items: center;
+}
+
+.body-content .login-page .form-input button {
+    background: linear-gradient(0.25turn, #ff00fc, #ff0087, #ec9411);
+  transition:transform 0.1s cubic-bezier(.17,.67,.83,.67);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 36px;
+  margin: auto;
+  border: none;
+  color:#fff;
+  width: 36px;
+}
+
+
+.body-content .login-page .form-input button:hover {
+  transform:scale(1.1);
+}
+
+.body-content .login-page .form-input button:active {
+    background: linear-gradient(0.25turn, #ff00fc, #ff0087, #ec9411);
+  transform:scale(0.9);
+}
+
+.body-content .login-page h5 {
+  position: relative;
+  padding:10px 20px;
+  margin: auto;
+  z-index:2;
+}
+
+.body-content .login-page h5:after {
+  transition:width 0.3s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+  transition:color 0.3s linear;
+  transition:height 0.3s linear;
+  position: absolute;
+  content: '';
+  height: 4px;
+  bottom: -2px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+    background: linear-gradient(0.25turn, #ff00fc, #ff0087, #ec9411);
+}
+
+.body-content .login-page h5:hover {
+  color:#fff;
+}
+
+.body-content .login-page h5:hover:after {
+    background: linear-gradient(0.25turn, #ff00fc, #ff0087, #ec9411);
+      border-radius:5px;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+nav.navbar{
+  background-color: #7a7a7a;
+}
+
+h1.text-prof{
+  text-align: center;
+  margin-top: 250px;
+}
