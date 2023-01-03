@@ -26,7 +26,7 @@ else {
             echo "<li><a href='?action=logout'>Déconnexion</a></li>";
         }
         else {
-            echo "<li><a href='?action=inscription'>Inscription</a></li>";
+            echo "<li><a href='inscription.php'>Inscription</a></li>";
         }
         ?>
 
